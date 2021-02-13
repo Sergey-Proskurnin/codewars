@@ -26,4 +26,4 @@ function elevatorDistance(array) {
     // your code here
   }
 
-  console.log(elevatorDistance([5,2,8]));
+    console.log(elevatorDistance([5,2,8]));
