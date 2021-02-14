@@ -17,7 +17,7 @@ var abc2 = 'etaoinshrdlucmfwypvbgkjqxz';
 // sub.decode("qxz") // => "xyz"
 // sub.decode("eirfg") // => "aeiou"
 
-//**Неработает если в куске есть символі не из алфавита*/
+// **Неработает если в куске есть символы не из алфавита*/
 // function SubstitutionCipher(abc1, abc2) {
 //   let aBc1 = abc1.split('');
 //   let aBc2 = abc2.split('');
@@ -41,11 +41,11 @@ var abc2 = 'etaoinshrdlucmfwypvbgkjqxz';
 //   };
 // }
 
-function SubstitutionCipher(abc1, abc2) {
+const SubstitutionCipher = function(abc1, abc2) {
   let aBc1 = [...abc1];
   let aBc2 = [...abc2];
-
-  SubstitutionCipher.encode = function (str) {
+  
+SubstitutionCipher.encode = function (str) {
     return [...str]
       .map(el => (aBc1.includes(el) ? aBc2[aBc1.indexOf(el)] : el))
       .join('');
@@ -61,6 +61,7 @@ function SubstitutionCipher(abc1, abc2) {
     //...
   };
 }
+
 SubstitutionCipher(abc1, abc2);
 console.log(SubstitutionCipher.encode('abc'));
 console.log(SubstitutionCipher.decode('eta'));
