@@ -88,22 +88,3 @@
 //     // const expected = "GOLD: Joline, SILVER: Jane, BRONZE: Gerry";
     
 //     console.log(calculateWinners(snapshot, penguins));
-
-function findSecretMessage(paragraph) {
-  let arr1 = []
-  let arr = paragraph.toLowerCase().split('.').join('').trim().split(' ')
-  let arr2 = arr.reduce((acc, el) => {
-     return acc.includes(el) ?  [...arr1, el] : [...acc, el]
-}, [])
-  arr2.splice(arr2.length - 1, 1)
-    let arr4 = arr2.reduce((acc, el) => {
-     return acc.includes(el) ? acc : [...acc, el]
-}, [])
-  return arr4.join(' ')
-  // what's the message?
- // return arr4.join(' ')
-}
-
-// console.log(findSecretMessage('This is a test. this test is fun.'));
-
-console.log(findSecretMessage('CUkps ixsjcf uvxyz snwguy dbeqy uazh nekzl hetde taqvnw jhsk gephjq otks mcracxl lzqfxc zdbd pruq ppzt eukend uuej hfgqmss xhpz lrpwzos vfldvkw hiln rjym opeqlz pgchyoz lpna tlltlh cpym hnznnt mjfduv ebyn eyuk shpzz fospvi mqsros idlurt pdrmt azguhp zmypij csjm hshb ikee flvpoe qphzr naduagg enerest gslxegg iiapi mxjq vccd szqx zvrzz wfisn svwdbt ikhjkt wvzc pkchzg znnd lomwmf rkar vgmat jprin yagvqh iypo sfzkj uykk jrxs orrlf bqxr rlbjzwx dqszzt cfvnx ervqo ncyjtkl yhxh qgwtwpq wnvhf'));
